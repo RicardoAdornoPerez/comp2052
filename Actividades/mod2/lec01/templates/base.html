@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Tanques Online{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>¡Compra tu tanque hoy!</header>
+  <nav>
+    <a href="/">Inicio</a>
+    <a href="/tanques">Tanques</a>
+    <a href="/productos">Productos</a>
+  </nav>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <footer>
+    © 2025 TanquesOnline Inc. Todos los derechos reservados.
+  </footer>
+</body>
+</html>

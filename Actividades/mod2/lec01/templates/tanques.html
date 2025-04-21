@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Tanques{% endblock %}
+{% block content %}
+  <h2>Modelos disponibles</h2>
+  {% for tanque in tanques %}
+    <div class="tanque-card">
+      <strong>{{ tanque.modelo }}</strong><br>
+      País: {{ tanque.pais }}<br>
+      Blindaje: {{ tanque.blindaje }}
+    </div>
+  {% endfor %}
+{% endblock %}

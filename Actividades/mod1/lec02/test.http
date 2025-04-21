@@ -1,0 +1,10 @@
+### /
+GET http://localhost:5000/info
+
+### mensaje
+POST http://localhost:5000/mensaje
+Content-Type: application/json
+
+{
+    "nombre": "john doe"
+}
