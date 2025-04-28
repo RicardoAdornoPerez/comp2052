@@ -1,0 +1,47 @@
+### 1. Acceder al home
+GET http://localhost:5000/
+
+###
+
+### 2. Loguearse como admin
+GET http://localhost:5000/login/admin
+
+###
+
+### 3. Ir a área de administración
+GET http://localhost:5000/admin
+
+###
+
+### 4. Intentar acceder a editor (debería dar error si eres admin)
+GET http://localhost:5000/editor
+
+###
+
+### 5. Logout
+GET http://localhost:5000/logout
+
+###
+
+### 6. Loguearse como editor
+GET http://localhost:5000/login/editor
+
+###
+
+### 7. Ir a área de editor
+GET http://localhost:5000/editor
+
+###
+
+### 8. Intentar acceder a administración (error porque no es admin)
+GET http://localhost:5000/admin
+
+###
+
+### 9. Loguearse como usuario normal
+GET http://localhost:5000/login/usuario
+
+###
+
+### 10. Acceder a área de usuario
+GET http://localhost:5000/user

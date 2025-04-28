@@ -20,7 +20,7 @@ else:
             {"nombre": "Camuflaje", "precio": 15.00}
         ]
     }
-
+    
 @app.route("/")
 def index():
     return render_template("index.html")
