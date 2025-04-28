@@ -1,4 +1,14 @@
 {
-  "usuarios": [],
-  "productos": []
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "bigbean6979",
+      "correo": "bigbean6979@example.com"
+    },
+    {
+      "id": 2,
+      "nombre": "Ricardo Adorno",
+      "correo": "ricardo@example.com"
+    }
+  ]
 }

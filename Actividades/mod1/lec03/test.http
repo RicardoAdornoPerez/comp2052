@@ -1,6 +1,6 @@
-### Obtener información del sistema
+### Obtener info
 GET http://localhost:5000/info
-Accept: application/json
+Content-Type: application/json
 
 ###
 
@@ -9,29 +9,9 @@ POST http://localhost:5000/crear_usuario
 Content-Type: application/json
 
 {
-  "nombre": "Ricardo Adorno",
-  "correo": "ricardo@correo.com"
+  "nombre": "Janiel Rodriguez",
+  "correo": "janiel@example.com"
 }
-
-###
-
-### Ver lista de usuarios
+### Obtener usuarios
 GET http://localhost:5000/usuarios
-Accept: application/json
-
-###
-
-### Crear producto
-POST http://localhost:5000/crear_producto
 Content-Type: application/json
-
-{
-  "nombre": "Galletas BoriSnacks",
-  "precio": 2.50
-}
-
-###
-
-### Ver lista de productos
-GET http://localhost:5000/productos
-Accept: application/json

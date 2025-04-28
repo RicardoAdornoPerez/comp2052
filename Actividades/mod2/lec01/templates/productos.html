@@ -1,11 +1,66 @@
-{% extends "base.html" %}
-{% block title %}Productos{% endblock %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #333;
+    }
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 90%;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+
   <h2>Lista de Productos</h2>
+
   <table>
-    <tr><th>Nombre</th><th>Precio</th></tr>
-    {% for p in productos %}
-      <tr><td>{{ p.nombre }}</td><td>${{ p.precio }}</td></tr>
-    {% endfor %}
+    <tr>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Partes de Tanque</th>
+    </tr>
+    <tr>
+      <td>Tanque Ligero</td>
+      <td>$15,000</td>
+      <td>Motor V6, Blindaje Básico</td>
+    </tr>
+    <tr>
+      <td>Tanque Pesado</td>
+      <td>$30,000</td>
+      <td>Motor V12, Cañón 120mm, Blindaje Reforzado</td>
+    </tr>
+    <tr>
+      <td>Tanque Ultra</td>
+      <td>$50,000</td>
+      <td>Motor Turbo-Diesel, Cañón 155mm, Blindaje Compuesto Avanzado</td>
+    </tr>
   </table>
-{% endblock %}
+
+</body>
+</html>

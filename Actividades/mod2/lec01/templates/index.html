@@ -1,6 +1,52 @@
 {% extends "base.html" %}
-{% block title %}Inicio{% endblock %}
+
+{% block title %}
+Inicio - Tanques Online
+{% endblock %}
+
 {% block content %}
-  <h1>Bienvenido a la App de Tanques y Productos</h1>
-  <p>Selecciona una sección del menú para continuar.</p>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6dd5ed, #2193b0);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.5em;
+    }
+    .button {
+      margin: 20px 10px;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      color: #2193b0;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .button:hover {
+      background-color: #2193b0;
+      color: #ffffff;
+    }
+  </style>
+
+  <h1>Bienvenido a Tanques Online</h1>
+  <p>Explora nuestros tanques y productos de alta calidad.</p>
+  <div>
+    <button class="button" onclick="location.href='/tanques'">Ver Tanques</button>
+    <button class="button" onclick="location.href='/productos'">Ver Productos</button>
+  </div>
 {% endblock %}
